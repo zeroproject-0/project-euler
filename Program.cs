@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace projecteuler
 {
@@ -9,6 +10,7 @@ namespace projecteuler
       int option = -1;
       Resources resources = new Resources();
       Problems problems = new Problems();
+      Stopwatch sw = new Stopwatch();
       do{
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.Clear();
@@ -31,7 +33,9 @@ namespace projecteuler
 
         if(option > 0)
         {
+          sw.Start();
           problems.showProblems(option);
+          sw.Stop();
           Console.WriteLine($"The Answer for problem \"{resources.titles[option]}\" is:");
           Console.WriteLine($"\n{Resources.answer}\n");
         }
@@ -41,6 +45,7 @@ namespace projecteuler
           Console.WriteLine("Enter a number from 0 to 10");
         }
 
+        Console.WriteLine($"Time elapsed: {sw.Elapsed.ToString("hh\\:mm\\:ss\\.fff")}");
         Console.WriteLine("Press any key to continue");
         Console.ReadKey();
       }while(option != 0);

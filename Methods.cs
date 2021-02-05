@@ -82,5 +82,40 @@ namespace projecteuler
       double sumPow = (2 * n + 1) * (n + 1) * n / 6;
       Resources.answer = Math.Abs(sum - sumPow);
     }
+    public void problem7(int n){
+      int i = 3, prime = 1;
+      if (n == 1) i = 2;
+      else
+      {
+        while(prime != n)
+        {
+          if (resources.isPrime(i)) prime++;
+          i += 2;
+        }
+      }
+      Resources.answer = i;
+    }
+    public void problem8(string text, int n){
+      List<ulong> numbers = new List<ulong>();
+      ulong number;
+      string numbersText;
+      for (int i = 0; i + n <= text.Length; i++)
+      {
+        number = 1;
+        
+        if (i == 0 && n % 2 != 0) numbersText = text.Substring(i,n - 1);
+        else numbersText = text.Substring(i,n);
+
+        if (numbersText.Contains("0")) continue;
+
+        for (int j = 0; j < numbersText.Length; j++)
+        {
+          number *= ulong.Parse(numbersText.Substring(j,1));
+        } 
+        numbers.Add(number);
+      }
+
+      Resources.answer = numbers.Max();
+    }
   }
 }
