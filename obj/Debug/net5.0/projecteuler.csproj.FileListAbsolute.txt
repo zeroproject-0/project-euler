@@ -1,0 +1,16 @@
+E:\projecteuler\bin\Debug\net5.0\projecteuler.exe
+E:\projecteuler\bin\Debug\net5.0\projecteuler.deps.json
+E:\projecteuler\bin\Debug\net5.0\projecteuler.runtimeconfig.json
+E:\projecteuler\bin\Debug\net5.0\projecteuler.runtimeconfig.dev.json
+E:\projecteuler\bin\Debug\net5.0\projecteuler.dll
+E:\projecteuler\bin\Debug\net5.0\ref\projecteuler.dll
+E:\projecteuler\bin\Debug\net5.0\projecteuler.pdb
+E:\projecteuler\obj\Debug\net5.0\projecteuler.csprojAssemblyReference.cache
+E:\projecteuler\obj\Debug\net5.0\projecteuler.GeneratedMSBuildEditorConfig.editorconfig
+E:\projecteuler\obj\Debug\net5.0\projecteuler.AssemblyInfoInputs.cache
+E:\projecteuler\obj\Debug\net5.0\projecteuler.AssemblyInfo.cs
+E:\projecteuler\obj\Debug\net5.0\projecteuler.csproj.CoreCompileInputs.cache
+E:\projecteuler\obj\Debug\net5.0\projecteuler.dll
+E:\projecteuler\obj\Debug\net5.0\ref\projecteuler.dll
+E:\projecteuler\obj\Debug\net5.0\projecteuler.pdb
+E:\projecteuler\obj\Debug\net5.0\projecteuler.genruntimeconfig.cache
