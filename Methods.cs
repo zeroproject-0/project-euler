@@ -117,5 +117,31 @@ namespace projecteuler
 
       Resources.answer = numbers.Max();
     }
+
+    public void problem9(int n){ 
+      int a=0, b=0, c=0;
+      double result = 0;
+      bool f =false;
+
+      for (c = 1; c <= n ; c++)
+      {
+        for (b = 0; b <= n/2; b++)
+        {
+          for (a = 1; a <= n/3; a++)
+          {
+            if (a*a + b*b == c*c && a+b+c==n && a<b && b<c)
+            {
+              result = a*b*c;
+              f=true;
+              break;
+            }
+          }
+          if(f) break;
+        }
+        if(f) break;
+      }
+
+      Resources.answer = $"a = {a}, b = {b}, c = {c}, result = {result}";
+    }
   }
 }

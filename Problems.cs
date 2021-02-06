@@ -39,6 +39,9 @@ namespace projecteuler
         case 8:
           methods.problem8(Resources.problem8, 13);
         break;
+        case 9:
+          methods.problem9(1000);
+        break;
       }
     }
   }

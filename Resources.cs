@@ -45,7 +45,8 @@ namespace projecteuler
       "Smallest multiple",
       "Sum square difference",
       "10001st prime",
-      "Largest product in a series"
+      "Largest product in a series",
+      "Special Pythagorean triplet"
     };
     
     public static dynamic answer { get; set; }
