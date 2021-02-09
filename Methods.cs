@@ -143,5 +143,30 @@ namespace projecteuler
 
       Resources.answer = $"a = {a}, b = {b}, c = {c}, result = {result}";
     }
+    public void problem10(int n){
+      long result = 3;
+      for (int i = 1; i <= n; i++)
+      {
+        if(resources.isPrime(i)){
+          result += i;
+        }
+      }
+    
+      Resources.answer = result;
+    }
+
+    // TODO resolve promblem 11
+
+    public void problem12(ulong n){
+      ulong i=1, triNumber = 0;
+
+      do
+      {
+        triNumber = i*(i+1)/2;
+        i++;
+      }while (resources.numberDivisors(triNumber) < n);
+
+      Resources.answer = triNumber;
+    }
   }
 }

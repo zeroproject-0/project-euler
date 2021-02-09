@@ -42,6 +42,13 @@ namespace projecteuler
         case 9:
           methods.problem9(1000);
         break;
+        case 10:
+          methods.problem10(2000000);
+        break;
+        // TODO Put case 11
+        case 12:
+          methods.problem12(500);
+        break;
       }
     }
   }

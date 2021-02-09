@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace projecteuler
 {
@@ -35,6 +37,19 @@ namespace projecteuler
       }
     }
 
+    public ulong numberDivisors(ulong n){
+      ulong result = 0;
+      for (ulong i = 1; i <= Math.Floor(Math.Sqrt(n)); i++)
+      {
+        if (n % i == 0)
+        {
+          result++;
+        }
+      }
+
+      return result*2;
+    }
+
     public string[] titles = new string[]
     {
       "Exit",
@@ -46,7 +61,18 @@ namespace projecteuler
       "Sum square difference",
       "10001st prime",
       "Largest product in a series",
-      "Special Pythagorean triplet"
+      "Special Pythagorean triplet",
+      "Summation of primes",
+      "Largest product in a grid",
+      "Highly divisible triangular number",
+      "Large sum",
+      "Longest Collatz sequence",
+      "Lattice paths",
+      "Power digit sum",
+      "Number letter counts",
+      "Maximum path sum I",
+      "Counting Sundays",
+      "Factorial digit sum"
     };
     
     public static dynamic answer { get; set; }

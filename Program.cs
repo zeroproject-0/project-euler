@@ -12,7 +12,7 @@ namespace projecteuler
       Problems problems = new Problems();
       Stopwatch sw = new Stopwatch();
       do{
-        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.Clear();
 
         int i = 0;
@@ -25,6 +25,7 @@ namespace projecteuler
 
         try
         {
+          Console.Write("\nEnter the exercise number => ");
           option = int.Parse(Console.ReadLine());
           if(option == 0) break;
           Console.Clear();
