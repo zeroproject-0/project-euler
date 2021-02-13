@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 
 namespace projecteuler
 {
@@ -167,6 +168,15 @@ namespace projecteuler
       }while (resources.numberDivisors(triNumber) < n);
 
       Resources.answer = triNumber;
+    }
+    public void problem13(String[] n){
+      BigInteger sum = new BigInteger();
+      for (int i = 0; i < n.Length; i++)
+      { 
+      System.Console.WriteLine(n[i].Length);
+        sum += BigInteger.Parse(n[i]);
+      }
+      Resources.answer = Convert.ToString(sum).Substring(0,10);
     }
   }
 }
